@@ -52,7 +52,7 @@
                 <version>3.2.5</version>
                 <configuration>
                 <suiteXmlFiles>
-					<!-- <suiteXmlFile>testngseq.xml</suiteXmlFile> -->
+					<suiteXmlFile>testngseq.xml</suiteXmlFile> 
 					<suiteXmlFile>testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
                </configuration>
