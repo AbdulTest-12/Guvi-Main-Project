@@ -1,0 +1,302 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 01 18:37:53 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>211 seconds (211902 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TransferFundsModule.TransferFunds()'><b>TransferFunds</b><br>Test class: tests.TransferFundsModule<br>Parameters: Vasi, nazeer123, 12345678900987654321852369147, 0, 0, Invalid Amt, An internal error has occurred and has been logged.</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc9ecdb3c700a98d34765ace849a8391, clickElement {id=f.5C67BB09A32252BE4ECE063AD53CECF4.d.06A8DC3EEB6E632F037B9000C872D679.e.23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Vaseera\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59443}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59443/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fc9ecdb3c700a98d34765ace849a8391)] -&gt; link text: Transfer Funds]
+Session ID: fc9ecdb3c700a98d34765ace849a8391
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pages.AccountServicePage.TransferFunds(AccountServicePage.java:53)
+	at tests.TransferFundsModule.TransferFunds(TransferFundsModule.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2102534528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2102534528'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc9ecdb3c700a98d34765ace849a8391, clickElement {id=f.5C67BB09A32252BE4ECE063AD53CECF4.d.06A8DC3EEB6E632F037B9000C872D679.e.23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Vaseera\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59443}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59443/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fc9ecdb3c700a98d34765ace849a8391)] -&gt; link text: Transfer Funds]
+Session ID: fc9ecdb3c700a98d34765ace849a8391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pages.AccountServicePage.TransferFunds(AccountServicePage.java:53)
+	at tests.TransferFundsModule.TransferFunds(TransferFundsModule.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>2</td>
+<td>tests.TransferFundsModule@55b699ef</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LoginModule.LoginTest()'><b>LoginTest</b><br>Test class: tests.LoginModule<br>Parameters: Thor, Abdul12, Invalid Password, The username and password could not be verified.</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginModule@f6efaab</td></tr>
+<tr>
+<td title='tests.NavigationTestModule.NavigationTest()'><b>NavigationTest</b><br>Test class: tests.NavigationTestModule</td>
+<td></td>
+<td>1</td>
+<td>tests.NavigationTestModule@35d019a3</td></tr>
+<tr>
+<td title='tests.LoginModule.testPasswordFieldIsMasked()'><b>testPasswordFieldIsMasked</b><br>Test class: tests.LoginModule</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginModule@f6efaab</td></tr>
+<tr>
+<td title='tests.NavigationTestModule.ActionButtonsVisibility()'><b>ActionButtonsVisibility</b><br>Test class: tests.NavigationTestModule</td>
+<td></td>
+<td>0</td>
+<td>tests.NavigationTestModule@35d019a3</td></tr>
+<tr>
+<td title='tests.RequestLoanModule.RequestLoan()'><b>RequestLoan</b><br>Test class: tests.RequestLoanModule<br>Parameters: Vasi, nazeer123, 5000, 500, 0, Approved, Congratulations, your loan has been approved.</td>
+<td></td>
+<td>3</td>
+<td>tests.RequestLoanModule@18078bef</td></tr>
+<tr>
+<td title='tests.CustomerCareModule.SupportService()'><b>SupportService</b><br>Test class: tests.CustomerCareModule<br>Parameters: John Doe, , 1234567890, Need help with login., missing email, Email is required.</td>
+<td></td>
+<td>2</td>
+<td>tests.CustomerCareModule@2a3b5b47</td></tr>
+<tr>
+<td title='tests.LoginModule.LoginTest()'><b>LoginTest</b><br>Test class: tests.LoginModule<br>Parameters: Vasi, nazeer123, Valid, Account Services</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginModule@f6efaab</td></tr>
+<tr>
+<td title='tests.CustomerCareModule.SupportService()'><b>SupportService</b><br>Test class: tests.CustomerCareModule<br>Parameters: , jane@example.com, 0987654321, Support issue., missing name, Name is required.</td>
+<td></td>
+<td>1</td>
+<td>tests.CustomerCareModule@2a3b5b47</td></tr>
+<tr>
+<td title='tests.OpenNewAccountModule.AccountDetailsNewAcct()'><b>AccountDetailsNewAcct</b><br>Test class: tests.OpenNewAccountModule<br>Parameters: Vasi, nazeer123, 1</td>
+<td></td>
+<td>3</td>
+<td>tests.OpenNewAccountModule@351d00c0</td></tr>
+<tr>
+<td title='tests.CustomerCareModule.SupportService()'><b>SupportService</b><br>Test class: tests.CustomerCareModule<br>Parameters: May, maytest@gmail.com, 6699550077, Need Help with transfer funds, valid, A Customer Care Representative will be contacting you.</td>
+<td></td>
+<td>3</td>
+<td>tests.CustomerCareModule@2a3b5b47</td></tr>
+<tr>
+<td title='tests.FindTransactionModule.FindbyFromandToDate()'><b>FindbyFromandToDate</b><br>Test class: tests.FindTransactionModule</td>
+<td></td>
+<td>3</td>
+<td>tests.FindTransactionModule@689604d9</td></tr>
+<tr>
+<td title='tests.CustomerCareModule.SupportService()'><b>SupportService</b><br>Test class: tests.CustomerCareModule<br>Parameters: May, maytest@gmail, 6655228811, , missing msg, Message is required.</td>
+<td></td>
+<td>2</td>
+<td>tests.CustomerCareModule@2a3b5b47</td></tr>
+<tr>
+<td title='tests.RequestLoanModule.RequestLoan()'><b>RequestLoan</b><br>Test class: tests.RequestLoanModule<br>Parameters: Vasi, nazeer123, 20000, 1000, 0, Denied, We cannot grant a loan in that amount with your available funds.</td>
+<td></td>
+<td>3</td>
+<td>tests.RequestLoanModule@18078bef</td></tr>
+<tr>
+<td title='tests.CustomerCareModule.SupportService()'><b>SupportService</b><br>Test class: tests.CustomerCareModule<br>Parameters: John Doe, jane@example.com, , Need help with login., missing phn, Phone is required.</td>
+<td></td>
+<td>2</td>
+<td>tests.CustomerCareModule@2a3b5b47</td></tr>
+<tr>
+<td title='tests.LoginModule.LoginTest()'><b>LoginTest</b><br>Test class: tests.LoginModule<br>Parameters: , , Nodata, Please enter a username and password.</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginModule@f6efaab</td></tr>
+<tr>
+<td title='tests.TransferFundsModule.TransferFunds()'><b>TransferFunds</b><br>Test class: tests.TransferFundsModule<br>Parameters: Vasi, nazeer123, 100, 0, 0, Valid, Transfer Complete!</td>
+<td></td>
+<td>4</td>
+<td>tests.TransferFundsModule@55b699ef</td></tr>
+<tr>
+<td title='tests.RequestLoanModule.RequestLoan()'><b>RequestLoan</b><br>Test class: tests.RequestLoanModule<br>Parameters: Vasi, nazeer123, , , , NoDetails, An internal error has occurred and has been logged</td>
+<td></td>
+<td>3</td>
+<td>tests.RequestLoanModule@18078bef</td></tr>
+<tr>
+<td title='tests.RequestLoanModule.RequestLoan()'><b>RequestLoan</b><br>Test class: tests.RequestLoanModule<br>Parameters: Vasi, nazeer123, 5, 500000, 0, InsufficientFund, You do not have sufficient funds for the given down payment.</td>
+<td></td>
+<td>3</td>
+<td>tests.RequestLoanModule@18078bef</td></tr>
+<tr>
+<td title='tests.NavigationTestModule.FontConsistency()'><b>FontConsistency</b><br>Test class: tests.NavigationTestModule</td>
+<td></td>
+<td>1</td>
+<td>tests.NavigationTestModule@35d019a3</td></tr>
+<tr>
+<td title='tests.OpenNewAccountModule.AccountDetailsNewAcct()'><b>AccountDetailsNewAcct</b><br>Test class: tests.OpenNewAccountModule<br>Parameters: Vasi, nazeer123, 0</td>
+<td></td>
+<td>3</td>
+<td>tests.OpenNewAccountModule@351d00c0</td></tr>
+<tr>
+<td title='tests.FindTransactionModule.FindbyAmount()'><b>FindbyAmount</b><br>Test class: tests.FindTransactionModule</td>
+<td></td>
+<td>2</td>
+<td>tests.FindTransactionModule@689604d9</td></tr>
+<tr>
+<td title='tests.LoginModule.LoginTest()'><b>LoginTest</b><br>Test class: tests.LoginModule<br>Parameters: Unknown, Unknown, Not Registered, The username and password could not be verified.</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginModule@f6efaab</td></tr>
+<tr>
+<td title='tests.TransferFundsModule.TransferFunds()'><b>TransferFunds</b><br>Test class: tests.TransferFundsModule<br>Parameters: Vasi, nazeer123, , 0, 0, No User, An internal error has occurred and has been logged.</td>
+<td></td>
+<td>4</td>
+<td>tests.TransferFundsModule@55b699ef</td></tr>
+<tr>
+<td title='tests.TransferFundsModule.TransferFunds()'><b>TransferFunds</b><br>Test class: tests.TransferFundsModule<br>Parameters: Vasi, nazeer123, 1@#$567, 0, 0, Invalid, An internal error has occurred and has been logged.</td>
+<td></td>
+<td>5</td>
+<td>tests.TransferFundsModule@55b699ef</td></tr>
+<tr>
+<td title='tests.FindTransactionModule.FindbyDate()'><b>FindbyDate</b><br>Test class: tests.FindTransactionModule</td>
+<td></td>
+<td>3</td>
+<td>tests.FindTransactionModule@689604d9</td></tr>
+</table><p>
+</body>
+</html>

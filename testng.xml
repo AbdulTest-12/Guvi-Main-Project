@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite thread-count="3" parallel="tests" name="Suite">
+<listeners>
+	<listener class-name="Utils.Listeners"></listener>
+</listeners>
+<parameter name="url" value="https://parabank.parasoft.com/parabank/index.htm"></parameter>
+
+  <test thread-count="1" parallel="tests" name="ChromeTest">
+     <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="tests.LoginModule"/>
+      <class name="tests.OpenNewAccountModule"/>
+      <class name="tests.CustomerCareModule"/>
+      <class name="tests.TransferFundsModule"/>
+      <class name="tests.NavigationTestModule"/>
+      <class name="tests.FindTransactionModule"/>
+      <class name="tests.RequestLoanModule"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="1" parallel="tests" name="Test">
+     <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="tests.LoginModule"/>
+      <class name="tests.OpenNewAccountModule"/>
+      <class name="tests.CustomerCareModule"/>
+      <class name="tests.TransferFundsModule"/>
+      <class name="tests.NavigationTestModule"/>
+      <class name="tests.FindTransactionModule"/>
+      <class name="tests.RequestLoanModule"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
